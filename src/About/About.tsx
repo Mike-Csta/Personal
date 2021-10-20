@@ -5,7 +5,7 @@ function About() {
     <div className="a-container">
       <div className="a-left">
         <div className="a-left-wrap">
-          <img src={karteczki} alt="photo" className="a-img" />
+          <img src={karteczki} alt="karteczki" className="a-img" />
         </div>
       </div>
       <div className="a-right">

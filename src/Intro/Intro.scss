@@ -1,7 +1,13 @@
+body {
+  overflow-x: hidden;
+}
+
 .i-container {
+  position: relative;
   display: flex;
   height: 100vh;
   color: #000;
+  overflow: hidden;
 }
 
 .i-left {
@@ -13,8 +19,8 @@
 
 .i-right {
   flex: 1;
-
-  position: relative;
+  display: flex;
+  // position: relative;
 }
 
 .i-left-wrapper {
@@ -76,11 +82,15 @@
   width: 100%;
   height: 100%;
   clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
-  position: absolute;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 .i-img {
   transform: translateX(-7px);
+  image-rendering: optimizeSpeed;
+  margin-left: 90px;
 }
 
 $blend: hard-light;
@@ -88,11 +98,9 @@ $blend: hard-light;
 .i-img-1 {
   filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(160deg)
     contrast(30%);
-  // display: none;
-  /* mix-blend-mode: screen; */
   mix-blend-mode: $blend;
-  // transition: 0.02s;
   opacity: 0;
+  margin-left: 90px;
 }
 
 .i-img-2 {
@@ -100,7 +108,29 @@ $blend: hard-light;
   filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(-70deg)
     contrast(30%);
   mix-blend-mode: $blend;
-  // display: none;
-  // transition: 0.02s;
   opacity: 0;
+  margin-left: 90px;
+}
+
+.i-back-writing-wrapper {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: center;
+  z-index: -1;
+}
+
+.i-back-writing {
+  font-weight: 800;
+  top: -5vw;
+  position: absolute;
+  font-size: 25vw;
+  justify-content: center;
+  text-align: center;
+  color: rgb(219, 219, 219);
+  z-index: 1;
+  text-shadow: 0 0 50px rgb(211, 210, 210);
 }

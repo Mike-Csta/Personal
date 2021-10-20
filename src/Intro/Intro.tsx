@@ -1,4 +1,4 @@
-import { useRef } from "react";
+// import { useRef } from "react";
 
 import "./Intro.scss";
 import Me from "../img/mike.png";
@@ -70,6 +70,9 @@ const Intro = () => {
           <img src={Me} alt="" className="i-img-1" />
           <img src={Me} alt="" className="i-img-2" />
         </div>
+      </div>
+      <div className="i-back-writing-wrapper">
+        <div className="i-back-writing">work</div>
       </div>
     </div>
   );
