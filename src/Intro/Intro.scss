@@ -7,7 +7,7 @@
 .i-left {
   flex: 1;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
 }
 
@@ -19,10 +19,11 @@
 
 .i-left-wrapper {
   padding: 50px;
-  height: 300px;
+  height: 330px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 10vh;
 }
 
 .i-intro {
@@ -65,15 +66,41 @@
   height: 50px;
   font-size: 30px;
   font-weight: bold;
-  color: rgb(37, 201, 91);
+  color: rgb(138, 138, 138);
   display: flex;
   text-align: center;
 }
 
 .i-bg {
-  background-color: rgb(42, 163, 62);
+  background-color: rgb(212, 212, 212);
   width: 100%;
   height: 100%;
   clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
   position: absolute;
+}
+
+.i-img {
+  transform: translateX(-7px);
+}
+
+$blend: hard-light;
+
+.i-img-1 {
+  filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(160deg)
+    contrast(30%);
+  // display: none;
+  /* mix-blend-mode: screen; */
+  mix-blend-mode: $blend;
+  // transition: 0.02s;
+  opacity: 0;
+}
+
+.i-img-2 {
+  transform: translateX(-14px);
+  filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(-70deg)
+    contrast(30%);
+  mix-blend-mode: $blend;
+  // display: none;
+  // transition: 0.02s;
+  opacity: 0;
 }
