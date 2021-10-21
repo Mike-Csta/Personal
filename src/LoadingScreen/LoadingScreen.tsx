@@ -1,5 +1,5 @@
-Const LoadingScreen = ()={
-return "asdd"
-}
+const LoadingScreen = () => {
+  return "dasdas";
+};
 
-export default LoadingScreen
+export default LoadingScreen;
