@@ -27,7 +27,7 @@ const f1 = () => {
   setTimeout(() => {
     z2.style.opacity = "0";
   }, 200);
-  let time = Math.floor(Math.random() * 10000 + 2000);
+  let time = Math.floor(Math.random() * 8500 + 2000);
   setTimeout(() => {
     f2();
   }, time);
@@ -44,37 +44,41 @@ const Intro = () => {
 
   return (
     <>
-      <div className="i-logo">M I K K E</div>
-      <div className="i-container">
-        <div className="i-left">
-          <div className="i-left-wrapper">
-            <h2 className="i-intro">Helo, My name is</h2>
-            <h1 className="i-name">Mikołaj Chlasta</h1>
-            <h5>My interests are:</h5>
-            <div className="i-title">
-              <div className="i-title-wrapper">
-                <div className="i-title-item">Web Developer</div>
-                <div className="i-title-item pnk">UI/UX Designer</div>
-                <div className="i-title-item">Photographer</div>
-                <div className="i-title-item pnk">3D Graphics</div>
-                <div className="i-title-item">Contex-creator</div>
+      <div className="logo-absolute">
+        <div className="i-logo">M I K K E</div>
+      </div>
+      <div className="top">
+        <div className="i-container">
+          <div className="i-left">
+            <div className="i-left-wrapper">
+              <h2 className="i-intro">Helo, My name is</h2>
+              <h1 className="i-name">Mikołaj Chlasta</h1>
+              <h5>My interests are:</h5>
+              <div className="i-title">
+                <div className="i-title-wrapper">
+                  <div className="i-title-item">Web Developer</div>
+                  <div className="i-title-item pnk">UI/UX Designer</div>
+                  <div className="i-title-item">Photographer</div>
+                  <div className="i-title-item pnk">3D Graphics</div>
+                  <div className="i-title-item">Contex-creator</div>
+                </div>
               </div>
+              <p className="i-desc">
+                Programming is my passion and I will do everything to develop
+                this passion because it's something I love
+              </p>
             </div>
-            <p className="i-desc">
-              Programming is my passion and I will do everything to develop this
-              passion because it's something I love
-            </p>
           </div>
-        </div>
-        <div className="i-right">
-          <div className="i-bg">
-            <img src={Me} alt="" className="i-img" />
-            <img src={Me} alt="" className="i-img-1" />
-            <img src={Me} alt="" className="i-img-2" />
+          <div className="i-right">
+            <div className="i-bg">
+              <img src={Me} alt="" className="i-img" />
+              <img src={Me} alt="" className="i-img-1" />
+              <img src={Me} alt="" className="i-img-2" />
+            </div>
           </div>
-        </div>
-        <div className="i-back-writing-wrapper">
-          <div className="i-back-writing">work</div>
+          <div className="i-back-writing-wrapper">
+            <div className="i-back-writing">work</div>
+          </div>
         </div>
       </div>
     </>
