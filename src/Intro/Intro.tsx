@@ -43,38 +43,41 @@ const Intro = () => {
   }, 3000);
 
   return (
-    <div className="i-container">
-      <div className="i-left">
-        <div className="i-left-wrapper">
-          <h2 className="i-intro">Helo, My name is</h2>
-          <h1 className="i-name">Mikołaj Chlasta</h1>
-          <h5>My interests are:</h5>
-          <div className="i-title">
-            <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
-              <div className="i-title-item">UI/UX Designer</div>
-              <div className="i-title-item">Photographer</div>
-              <div className="i-title-item">3D Graphics</div>
-              <div className="i-title-item">Contex-creator</div>
+    <>
+      <div className="i-logo">M I K K E</div>
+      <div className="i-container">
+        <div className="i-left">
+          <div className="i-left-wrapper">
+            <h2 className="i-intro">Helo, My name is</h2>
+            <h1 className="i-name">Mikołaj Chlasta</h1>
+            <h5>My interests are:</h5>
+            <div className="i-title">
+              <div className="i-title-wrapper">
+                <div className="i-title-item">Web Developer</div>
+                <div className="i-title-item pnk">UI/UX Designer</div>
+                <div className="i-title-item">Photographer</div>
+                <div className="i-title-item pnk">3D Graphics</div>
+                <div className="i-title-item">Contex-creator</div>
+              </div>
             </div>
+            <p className="i-desc">
+              Programming is my passion and I will do everything to develop this
+              passion because it's something I love
+            </p>
           </div>
-          <p className="i-desc">
-            Programming is my passion and I will do everything to develop this
-            passion because it's something I love
-          </p>
+        </div>
+        <div className="i-right">
+          <div className="i-bg">
+            <img src={Me} alt="" className="i-img" />
+            <img src={Me} alt="" className="i-img-1" />
+            <img src={Me} alt="" className="i-img-2" />
+          </div>
+        </div>
+        <div className="i-back-writing-wrapper">
+          <div className="i-back-writing">work</div>
         </div>
       </div>
-      <div className="i-right">
-        <div className="i-bg">
-          <img src={Me} alt="" className="i-img" />
-          <img src={Me} alt="" className="i-img-1" />
-          <img src={Me} alt="" className="i-img-2" />
-        </div>
-      </div>
-      <div className="i-back-writing-wrapper">
-        <div className="i-back-writing">work</div>
-      </div>
-    </div>
+    </>
   );
 };
 

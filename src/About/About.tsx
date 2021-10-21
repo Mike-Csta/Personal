@@ -10,10 +10,10 @@ function About() {
       </div>
       <div className="a-right">
         <div className="a-right-wrap">
-          <h1 className="a-title">Prezydent</h1>
+          <h1 className="a-title">Nothing</h1>
           <div className="a-desc">
-            Polski prawnik i polityk, od 6 sierpnia 2015 Prezydent
-            Rzeczypospolitej Polskiej.
+            The site is under construction, there will be interesting context
+            here soon
           </div>
         </div>
       </div>
