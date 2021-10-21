@@ -1,0 +1,52 @@
+.i-right {
+  flex: 1;
+  display: flex;
+}
+
+.i-bg {
+  background-color: rgb(212, 212, 212);
+  width: 100%;
+  height: 100%;
+  clip-path: polygon(25% 0%, 100% 0, 100% 100%, 25% 100%, 0% 50%);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+@keyframes disp2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.i-img {
+  transform: translateX(-7px);
+  margin-left: 90px;
+  opacity: 0;
+  transition: all 1s;
+  animation: disp2 1s 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+$blend: hard-light;
+
+.i-img-1 {
+  filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(160deg)
+    contrast(30%);
+  mix-blend-mode: $blend;
+  opacity: 0;
+  margin-left: 90px;
+}
+
+.i-img-2 {
+  transform: translateX(-14px);
+  filter: sepia(100%) saturate(300%) brightness(80%) hue-rotate(-70deg)
+    contrast(30%);
+  mix-blend-mode: $blend;
+  opacity: 0;
+  margin-left: 90px;
+}

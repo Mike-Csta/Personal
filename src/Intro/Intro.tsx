@@ -1,6 +1,10 @@
 // import { useRef } from "react";
 
-import "./Intro.scss";
+import "./scss/Intro.scss";
+import "./scss/scrollbar.scss";
+import "./scss/left.scss";
+import "./scss/right.scss";
+import "./scss/logo.scss";
 import Me from "../img/mike.png";
 
 const f1 = () => {
@@ -15,7 +19,7 @@ const f1 = () => {
   }, 80);
 
   setTimeout(() => {
-    z2.style.transform = "translateX(-16px)";
+    z2.style.transform = "translateX(-17px)";
   }, 110);
 
   setTimeout(() => {
@@ -44,10 +48,10 @@ const Intro = () => {
 
   return (
     <>
-      <div className="logo-absolute">
+      <div className="i-logo-absolute">
         <div className="i-logo">M I K K E</div>
       </div>
-      <div className="top">
+      <div className="i-top">
         <div className="i-container">
           <div className="i-left">
             <div className="i-left-wrapper">
