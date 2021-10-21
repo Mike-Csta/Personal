@@ -1,16 +1,27 @@
-$blend: hard-light;
+$blend: color-dodge;
+
+@keyframes color1 {
+  0% {
+    color: rgb(255, 255, 255);
+  }
+
+  100% {
+    color: rgb(95, 95, 95);
+  }
+}
 
 .i-logo {
   z-index: 10;
   position: absolute;
   display: inline;
-  color: rgb(95, 95, 95);
+  color: rgb(255, 255, 255);
   font-weight: 400;
   font-size: 30px;
   // border-left: rgb(255, 0, 76) solid 2px;
   padding: 3px 10px 0px 10px;
   margin: 10px;
   transition: all 0.3s ease-in-out;
+  animation: color1 0.8s 1.8s forwards ease-in-out;
 }
 
 .i-logo:after {
@@ -18,7 +29,7 @@ $blend: hard-light;
   position: absolute;
   width: 2%;
   height: 100%;
-  background-color: rgb(236, 84, 104);
+  background-color: rgb(255, 95, 116);
   left: 0;
   z-index: -1;
   transition: all 0.3s;
@@ -35,6 +46,7 @@ $blend: hard-light;
   z-index: -1;
   transition: all 0.3s;
   transform: translate(5px, 5px);
+
   mix-blend-mode: $blend;
 }
 
@@ -46,8 +58,18 @@ $blend: hard-light;
   width: 100%;
 }
 
+@keyframes color2 {
+  0% {
+    color: rgb(95, 95, 95);
+  }
+
+  100% {
+    color: rgb(252, 252, 252);
+  }
+}
+
 .i-logo:hover {
-  color: rgb(255, 255, 255);
+  animation: color2 0.1s ease-in-out;
 }
 
 .i-logo-absolute {
