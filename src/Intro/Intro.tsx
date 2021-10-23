@@ -48,9 +48,7 @@ const Intro = () => {
 
   return (
     <>
-      <div className="i-logo-absolute">
-        <div className="i-logo">M I K K E</div>
-      </div>
+     
       <div className="i-top">
         <div className="i-container">
           <div className="i-left">
