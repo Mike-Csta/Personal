@@ -1,5 +1,5 @@
 import { useRef, useEffect } from "react";
-import "./Canvas.css";
+import "./Canvas.scss";
 
 const Canvas = () => {
   const canvasRef = useRef(null);
