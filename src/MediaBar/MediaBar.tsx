@@ -31,7 +31,7 @@ const MediaBar = () => {
     },
     {
       link: "https://cliply.co/wp-content/uploads/2021/02/372102690_TIKTOK_LOGO_1080.png",
-      nick: "mike csta",
+      nick: "- - -",
     },
   ];
 
