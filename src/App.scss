@@ -12,17 +12,17 @@ Body {
   display: none;
 }
 
-@media only screen and (max-width: 875px) {
-  .build {
-    display: block;
-    position: absolute;
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 300vh;
-    background-color: rgba(34, 34, 34, 0.432);
-    z-index: 10000000000;
-    backdrop-filter: blur(10px);
-  }
-}
+// @media only screen and (max-width: 875px) {
+//   .build {
+//     display: block;
+//     position: absolute;
+//     justify-content: center;
+//     text-align: center;
+//     flex-direction: column;
+//     width: 100vw;
+//     height: 300vh;
+//     background-color: rgba(34, 34, 34, 0.432);
+//     z-index: 10000000000;
+//     backdrop-filter: blur(10px);
+//   }
+// }
