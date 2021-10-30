@@ -2,6 +2,7 @@ import "./App.scss";
 import Intro from "./Intro/Intro";
 import About from "./About/About";
 import Faq from "./Faq/Faq";
+import MediaBar from "./MediaBar/MediaBar";
 import LoadingScreen from "./LoadingScreen/LoadingScreen";
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
       </div>
       <LoadingScreen />
       <Intro />
+      <MediaBar />
       <About />
       <Faq />
     </div>

@@ -1,0 +1,54 @@
+.mb-container {
+  position: relative;
+  width: 100vw;
+  height: 60px;
+  background-color: rgb(204, 204, 204);
+  color: black;
+  font-weight: 400;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+@keyframes anim {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+
+@keyframes opacity {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.mb-anim1 {
+  position: absolute;
+  //   animation: anim 30s infinite linear;
+  display: inline-flex;
+  flex-direction: row;
+  background-color: cadetblue;
+}
+.mb-anim2 {
+  position: absolute;
+  //   animation: anim 30s -15s infinite linear;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(160, 95, 144);
+}
+
+.mb-elem {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  height: 50px;
+  margin: 0 6vw;
+}
